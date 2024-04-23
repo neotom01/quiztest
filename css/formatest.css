@@ -1,0 +1,49 @@
+		body{
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-top: 15px;
+		}
+		.encabeza{
+			background-color: #3BA3E2;
+		}
+		.texto-justo{
+			text-align: justify;
+            text-justify: inter-word;
+		}
+		.linea-simple {
+           text-decoration-line: underline;
+           text-decoration-style: solid;
+        }
+
+       .doble-linea {
+           text-decoration-line: underline;
+           text-decoration-style: double;
+        }
+        div.figure {
+           width: 150px;
+           height: 150px;
+           background: navy;
+           position: relative;
+           animation: mymove 5s infinite;
+           animation-delay: 2s;
+           border-radius: 10px 10px 10px 10px;
+           -webkit-border-radius: 10px 10px 10px 10px;
+           -moz-border-radius: 10px 10px 10px 10px;
+        }
+
+
+       @keyframes mymove {
+        from {left: 0%;}
+        to {left: 65%;}
+        }
+        
+        .centradodiv{
+        	align-self: center;
+        	text-align: center;
+        }
+        .capitalizado:first-letter{
+          font-size:150%;
+          float:left;
+          font-family: arial black;
+          color:navy;
+        }
