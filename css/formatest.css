@@ -3,15 +3,15 @@
 			padding-right: 20px;
 			padding-top: 15px;
 		}
-        * { /*bloqueo botones mouse*/
-          user-select: none;
-          }
-         *::selection { /*botones mouse*/
-           background: none;
-          }
-         *::-moz-selection { /*bloqueo botones mouse*/
-           background: none;
-          }
+    * { /*bloqueo botones mouse*/
+       user-select: none;
+      }
+    *::selection { /*botones mouse*/
+      background: none;
+      }
+    *::-moz-selection { /*bloqueo botones mouse*/
+      background: none;
+      }
 		.encabeza{ /* estilo a encabezado web*/
 			background-color: #3BA3E2;
       color: white;
@@ -28,39 +28,110 @@
            text-decoration-style: solid;
         }
 
-       .doble-linea { /*decoraciontexto*/
-           text-decoration-line: underline;
-           text-decoration-style: double;
-        }
-        div.figure { /*animacion si es util*/
-           width: 150px;
-           height: 150px;
-           background: navy;
-           position: relative;
-           animation: mymove 5s infinite;
-           animation-delay: 2s;
-           border-radius: 10px 10px 10px 10px;
-           -webkit-border-radius: 10px 10px 10px 10px;
-           -moz-border-radius: 10px 10px 10px 10px;
-        }
+   .doble-linea { /*decoraciontexto*/
+        text-decoration-line: underline;
+        text-decoration-style: double;
+    }
+  div.figure { /*animacion si es util*/
+      width: 150px;
+      height: 150px;
+      background: navy;
+      position: relative;
+      animation: mymove 5s infinite;
+      animation-delay: 2s;
+      border-radius: 10px 10px 10px 10px;
+      -webkit-border-radius: 10px 10px 10px 10px;
+      -moz-border-radius: 10px 10px 10px 10px;
+      }
 
 
-       @keyframes mymove { /*animacion ajustes*/
-        from {left: 0%;}
-        to {left: 65%;}
-        }
+   @keyframes mymove { /*animacion ajustes*/
+    from {left: 0%;}
+     to {left: 65%;}
+      }
         
-        .centradodiv{ /*centrado texto y div*/
-        	align-self: center;
-        	text-align: center;
-        }
-        .capitalizado:first-letter{ /*primera letra <p>*/
-          font-size:150%;
-          float:left;
-          font-family: arial black;
-          color:navy;
-        }
-       #timequiz{ /*ajustes tiempo*/
-        color: black;
-       }
+    .centradodiv{ /*centrado texto y div*/
+      align-self: center;
+      text-align: center;
+      }
+    .centratexto{
+      text-align: center;
+    }
+    .centraelem{
+      align-self: center;
+      align-content: center;
+    }
+    .imagenmarg{
+      margin-right: 20%;
+      margin-left: 20%;
+    }
+    .textsiluet {text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87}
 
+    .blacksiluet {text-shadow: -1px 0 black, 0 1px black,
+    1px 0 black, 0 -1px black}
+
+    .shadowsiluet{
+      color: white; text-shadow: black 0.1em 0.1em 0.2em
+    }
+
+    .capitalizado:first-letter{ /*primera letra <p>*/
+      font-size:150%;
+      float:left;
+      font-family: arial black;
+      color:navy;
+        }
+
+    #timequiz{ /*ajustes tiempo*/
+      color: cyan;
+      }
+    label.form-check-label{ /*ajustes de label radio*/
+      padding-top: 5px;
+      padding-bottom: 3px;
+
+    }   
+    input[type="radio"]:checked+label { /*ajustes radio selecto*/
+     font-weight: bold; 
+     font-size: 18px;
+      }
+    input[type='radio']:hover { /*ajustes sobre radio*/
+      box-shadow: 0px 0px 0px 6px rgba(76, 121, 237, 0.8);
+      border-radius: 50%;
+      opacity: 1;
+       }
+    label.form-check-label:hover{ /*ajustes sobre label*/
+     font-weight: bold;
+     font-size: 20px;
+    }
+    .textozoom:hover{
+     font-weight: bold;
+     font-size: 18px;
+     }
+    .zoom { /*zoom elemento*/
+    transition: transform .2s; 
+     }
+ 
+    .zoom:hover { /*transicion zoom*/
+    transform: scale(1.4); 
+     }
+     .conborde{
+    border: 1px solid #000;
+    border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+     }
+     content{ /*ajuste espacio o caracteristicas*/
+      padding: 4px;
+     }
+    footer{ /*ajuste footer caracteristicas*/
+    margin: 2px;
+    position: relative;
+    margin-bottom: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: black;
+    color: cyan;
+    border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+   }
