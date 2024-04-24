@@ -1,34 +1,38 @@
-		body{
+		body{ /*padding de body*/
 			padding-left: 20px;
 			padding-right: 20px;
 			padding-top: 15px;
 		}
-        * {
+        * { /*bloqueo botones mouse*/
           user-select: none;
           }
-         *::selection {
+         *::selection { /*botones mouse*/
            background: none;
           }
-         *::-moz-selection {
+         *::-moz-selection { /*bloqueo botones mouse*/
            background: none;
           }
-		.encabeza{
+		.encabeza{ /* estilo a encabezado web*/
 			background-color: #3BA3E2;
+      color: white;
+      border-radius: 10px 10px 10px 10px;
+      -webkit-border-radius: 10px 10px 10px 10px;
+      -moz-border-radius: 10px 10px 10px 10px;
 		}
-		.texto-justo{
+		.texto-justo{ /*justifica contenido*/
 			text-align: justify;
             text-justify: inter-word;
 		}
-		.linea-simple {
+		.linea-simple { /*decoracion texto*/
            text-decoration-line: underline;
            text-decoration-style: solid;
         }
 
-       .doble-linea {
+       .doble-linea { /*decoraciontexto*/
            text-decoration-line: underline;
            text-decoration-style: double;
         }
-        div.figure {
+        div.figure { /*animacion si es util*/
            width: 150px;
            height: 150px;
            background: navy;
@@ -41,18 +45,22 @@
         }
 
 
-       @keyframes mymove {
+       @keyframes mymove { /*animacion ajustes*/
         from {left: 0%;}
         to {left: 65%;}
         }
         
-        .centradodiv{
+        .centradodiv{ /*centrado texto y div*/
         	align-self: center;
         	text-align: center;
         }
-        .capitalizado:first-letter{
+        .capitalizado:first-letter{ /*primera letra <p>*/
           font-size:150%;
           float:left;
           font-family: arial black;
           color:navy;
         }
+       #timequiz{ /*ajustes tiempo*/
+        color: black;
+       }
+
