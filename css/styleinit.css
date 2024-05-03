@@ -1,0 +1,93 @@
+/*start style body web */
+body{ 
+    background-image: url("../img/notebook.jpg");
+    height: 20vh;
+    background-repeat : repeat;
+    background-size : contain;
+    cursor: url(../img/pencil.svg), auto;
+    -webkit-user-select: none; -moz-user-select: none; 
+    -ms-user-select: none; user-select: none; 
+    background-color: white;margin-left: 1px; }
+/*end style body web*/
+a.btn:hover{
+    cursor: url(../img/pencil.svg), auto;
+}
+
+/**start styles sections web **/
+footer{
+    position: fixed;
+    margin-bottom: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.footerweb{
+   position: sticky;
+    position: -webkit-sticky;
+   right: 0px;
+   bottom:1px;
+   height:22px;
+   width:100%;
+   background-color:#0A1F2C;
+   color: cyan;
+   align-content: center;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+border-radius: 6px 6px 6px 6px;
+-moz-border-radius: 6px 6px 6px 6px;
+-webkit-border-radius: 6px 6px 6px 6px;
+
+}
+/**end styles sectionm web*/
+ul.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.justificado{
+    text-align: justify;
+}
+li.menu {
+  display: inline;
+}
+.enmedio {
+  text-align: center;
+}
+.centrado{
+    align-items: center;
+    align-content: center;
+    display: inline-block;
+}
+.zoom:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+div.color{
+    background-image: url("../img/tierra.png");
+    height: 50vh;
+    background-repeat :no-repeat;
+    background-size : contain;
+
+}
+.texto{
+    text-align: right;
+    position: absolute;
+    z-index: 10;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+    color: #F14D8B;
+    text-shadow: -1px 0 black, 0 1px black,
+      1px 0 black, 0 -1px black;
+    top: 20%;
+    right: 5%;
+    width: 50%;
+}
+.adds{
+ text-align: center;
+}
+.imgbord{
+    border-radius: 10px;
+}
