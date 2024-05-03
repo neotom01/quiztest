@@ -1,7 +1,6 @@
 /*start style body web */
 body{ 
-    background-image: url("../img/notebook.jpg");
-    height: 20vh;
+    background-image: url("https://i.ibb.co/SB45kTk/notebook.jpg"); 
     background-repeat : repeat;
     background-size : contain;
     cursor: url(../img/pencil.svg), auto;
@@ -65,7 +64,7 @@ li.menu {
   transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 div.color{
-    background-image: url("../img/tierra.png");
+    background-image: url("https://i.ibb.co/jhxjLjk/tierra.png"); 
     height: 50vh;
     background-repeat :no-repeat;
     background-size : contain;
