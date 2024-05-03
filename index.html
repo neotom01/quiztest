@@ -3,89 +3,268 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=500, initial-scale=1">
-	<title>Ejercicio Tipo Test</title>
-	<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
-	<link rel="stylesheet" href="css/formatest.css">
-	<script src="js/funciones.js" type="text/javascript" charset="utf-8" async defer></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>test code</title>
+	<link rel="stylesheet" href="css/styleinit.css">
+	<link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8" async defer></script>
+		<script>window.jQuery || document.write('<script src="js/jquery.js">x3C/script>')</script>
+	<script src="bootstrap/dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8" async defer></script>
 </head>
 <body>
-	<header id="header" class="row encabeza">
-		<h3 class="centradodiv shadowsiluet">EJERCICIO </h3><h5 class="centradodiv">Tiempo <b id="timequiz" class="shadowsiluet"></b></h5>
-	</header><!-- /header -->
-    <hr>
-	<nav class="row">
-		
-	</nav>
-    <div class="row texto-justo">
-    	<h5 class="textsiluet">Lee con atención:</h5><h6>Se indican las instrucciones del ejercicio, resuelve lo que se solicita. </h6>
-    	<p class="capitalizado textozoom">1.-  Ejercicio: Se necesita calcular la altura de un arbol (X), en un momento dado se mide su sombra y el angulo de esta con respecto al arbol. Usa la identidad trigonometrica indicada para calcular el valor. Usa los valores absolutos de los resultados obtenidos.</p>
-    	
+	 <!--start contenido de web -->
+	<div class="container"> 
+		<!--start grid head -->
+<header id="header" class="row">
+	<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 headerweb">
+		<center><h2>QUIZ</h2></center>
+	</div>
+</header><!-- end grid header -->
+
+<nav class="row"> <!--star grid nav-->
+<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 navweb enmedio">
+
+ <ul class="menu centrado">
+  <li class="menu"><a href="" type="button" class="btn btn-primary zoom" data-bs-toggle="modal" data-bs-target="#alumnos">Alumnos</a></li>
+  <li class="menu"><a href="#news" type="button" class="btn btn-primary zoom" data-bs-toggle="modal" data-bs-target="#avisos">Avisos</a></li>
+  <li class="menu"><a href="#contact" type="button" class="btn btn-primary zoom" data-bs-toggle="modal" data-bs-target="#administracion">Administración</a></li>
+  <li class="menu"><a href="#about" type="button" class="btn btn-primary zoom" data-bs-toggle="modal" data-bs-target="#acerca">Acerca de...</a></li>
+</ul>
+
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="alumnos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-primary text-light">
+        <h5 class="modal-title" id="exampleModalLabel">Alumnos</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-bs-toggle="tab" href="#home">Ingreso</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#menu1">Registro</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-bs-toggle="tab" href="#menu2">Verifica</a>
+    </li>
+  </ul>
+ 
+   <div class="tab-content">
+    <div id="home" class="container tab-pane active"><br>
+            <h5 class="card-title text-center mb-3 fs-5">Login</h5>
+            <form>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">E-mail</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+              </div>
+
+
+              <div class="d-grid">
+              </div>
+   
+            </form>
+<a href="test.html" type="button" class="btn btn-primary zoom">Ingresar</a>
+
+    </div>
+    <div id="menu1" class="container tab-pane fade"><br>
+          <h5>Registro</h5>
+ <form action="" class="">
+    <div class="mb-3 mt-3">
+      <label for="uname" class="form-label">Nombre Usuario:</label>
+      <input type="text" class="form-control form-control-sm" id="uname" placeholder="Nombre Apellido" name="uname" required>
+
+    </div>
+        <div class="mb-3 mt-3">
+      <label for="uname" class="form-label">Correo Escolar:</label>
+      <input type="email" class="form-control form-control-sm" id="uname" placeholder="Correo Escolar" name="uname" required>
+
+    </div>
+        <div class="mb-3 mt-3">
+      <label for="uname" class="form-label">ID alumno:</label>
+      <input type="text" class="form-control form-control-sm" id="uname" placeholder="ID Alumno" name="uname" required>
+
+    </div>
+    <div class="mb-3">
+      <label for="pwd" class="form-label">Password:</label>
+      <input type="password" class="form-control form-control-sm" id="pwd" placeholder="Password" name="pswd" required>
+    </div>
+        <div class="mb-3">
+      <label for="pwd" class="form-label">Repite Password:</label>
+      <input type="password" class="form-control form-control-sm" id="pwd" placeholder="Password" name="pswd" required>
     </div>
 
-    <hr>
-	<content class="row">
-	<section class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 texto-justo">
-		<h6 class="centratexto">Datos de apoyo en caso de que no se comprendan en imagen.</h6>
-       <h5 class="textsiluet">Datos ejercicio</h5>
-		<p class="textozoom">Altura arbol: X</p>
-		<p class="textozoom">Longitud de sombra: 9m</p>
-		<p class="textozoom">Angulo entre sombra y altura arbol: 37 Grados</p>
-	</section>
+  <button type="submit" class="btn btn-primary">Registro</button>
+  </form>
+   
+    </div>
 
-	<aside class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 texto-justo">
-     <!--<div class="figure">
-     </div> -->
-     <div class="centraelem">
-     	     <h6 class="centratexto">Imagen de apoyo</h6>
-     <img src="https://i.ibb.co/6Z3214L/arbol.jpg" alt="arbol" border="0" width="60%" height="60%" class="zoom conborde imagenmarg">
-     </div>
 
-	</aside>
+    <div id="menu2" class="container tab-pane fade"><br>
+      <h5>Buscar ID</h5>
+            <form>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">ID Alumno</label>
+              </div>
+
+              <div class="d-grid">
+                <button class="btn btn-primary btn-login text-uppercase fw-bold" type="submit">Buscar
+                </button>
+              </div>
+              
+   
+            </form>
+
+
+    </div>
+  </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="avisos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header bg-info text-light">
+        <h5 class="modal-title" id="exampleModalLabel">Avisos</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body justificado">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="administracion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-secondary text-light">
+        <h5 class="modal-title" id="exampleModalLabel">Administración</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+            <h5 class="card-title text-center mb-3 fs-5">Login</h5>
+            <form>
+              <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">E-mail</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <label for="floatingPassword">Password</label>
+              </div>
+
+
+              <div class="d-grid">
+                <button class="btn btn-primary btn-login text-uppercase fw-bold" type="submit">Ingresar
+                </button>
+              </div>
+              
+   
+            </form>
+
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="acerca" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header bg-dark text-light">
+        <h5 class="modal-title" id="exampleModalLabel">Acerca de...</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Codigo en revisión by tester
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+</nav>  <!--end grid nav-->
+        <!--start grid main boots -->
+        <div class="row contentweb">
+        	        <main class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 text-justify mainweb">
+   
+                    </main>
+        	<!--end grid main boots-->
+        	<!--start aside grid -->
+        <aside class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 text-justify asideweb">
+
+        </aside>
+
+        </div>
+
+            <!--end grid aside -->
+<div class="color">
+
+</div>
+<div class="texto">
+		Los ejercicios que aca se realizan no sustituyen a una evaluación realizada por un profesor o encargado de un tema o materia. Puede usarse como referencia para practicar o repasar sus conocimientos.
+
+</div>
+<div class="adds">
+	<img class="imgbord" src="img/brain.gif" width="20%" height="20%">
+</div>
+	<!--start grid footer-->
+<footer class="row">
+	<div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 footerweb">
+		<h5>Tester-K</h5>
 	
-    <div class="row">
-    	<hr>
-    	<h5 class="textsiluet">Selecciona la respuesta:</h5>
-
-       <div class="form-check">
-       <input type="radio" class="form-check-input" name="optradio">
-       <label class="form-check-label">
-       5.8m
-      </label>
-      </div>
-      <div class="form-check">
-      <input type="radio" class="form-check-input" name="optradio">	
-      <label class="form-check-label">
-      6.78m
-      </label>
-      </div>
-      <div class="form-check disabled">
-      <input type="radio" class="form-check-input" name="optradio">
-      <label class="form-check-label">
-      7.57m
-      </label>
-      </div>
-      <div class="form-check disabled">
-      <input type="radio" class="form-check-input" name="optradio">
-      <label class="form-check-label">
-      10m
-      </label>
-      </div>
-
-    </div>
-    <hr>
-    <div class="row">
-    	<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-    		<button type="button" class="btn btn-primary zoom">Enviar (sgte)</button><button type="button" class="btn btn-danger zoom">Terminar</button>
-    	</div>
-    	
-    </div>
-	</content>
-
-	<footer class="row texto-justo">
-		<center><h6>TesterQuiz</h6></center>
-
-	</footer>
-<script src="js/funciones.js" type="text/javascript" charset="utf-8" async defer></script>
+	</div>
+</footer>
+<!--end grid footer-->
+	</div>  <!--end contenido web-->
+	<script src="bootstrap/dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="js/jquery.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>
 </html>
