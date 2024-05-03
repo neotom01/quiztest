@@ -6,7 +6,8 @@ body{
     cursor: url(../img/pencil.svg), auto;
     -webkit-user-select: none; -moz-user-select: none; 
     -ms-user-select: none; user-select: none; 
-    background-color: white;margin-left: 1px; }
+    background-color: white;margin-left: 1px; 
+}
 /*end style body web*/
 a.btn:hover{
     cursor: url(../img/pencil.svg), auto;
@@ -90,3 +91,7 @@ div.color{
 .imgbord{
     border-radius: 10px;
 }
+.imgbord:hover{
+ -webkit-transform:scale(1.3);transform:scale(1.3);
+}
+.color:hover {filter: blur(3px);}
